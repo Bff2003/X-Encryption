@@ -1,4 +1,3 @@
-from Classes.ClassEncrypt import Encriptar
 from configparser import ConfigParser
 import os
 import sys
