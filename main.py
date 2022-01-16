@@ -1,18 +1,15 @@
 from configparser import ConfigParser
 import os
 import sys
-import configparser
 import os.path
-from os import path
 import requests
-from cryptography.fernet import Fernet, MultiFernet
-import base64, hashlib
+from cryptography.fernet import Fernet
+import base64
 import base64
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 import zipfile
-import atexit
 import ctypes
 
 class Functions:
@@ -365,7 +362,7 @@ class Program:
 
     def MP_Opcao_1(self):
         self.func.LimparTerminal()
-        if(path.exists("filekey.key") == False):
+        if(os.path.exists("filekey.key") == False):
             print("------------ Opções ------------------")
             print("1- Criar uma pass personalizada")
             print("2- Gerar uma pass \n")
